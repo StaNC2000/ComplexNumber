@@ -22,4 +22,8 @@ public class ComplexNumber {
         this.real += real;
         this.imaginary += imaginary;
     }
+
+    public void add(ComplexNumber complexNumber){
+        complexNumber = new ComplexNumber(getReal(),getImaginary());
+    }
 }
