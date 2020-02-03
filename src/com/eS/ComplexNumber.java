@@ -23,12 +23,18 @@ public class ComplexNumber {
         this.imaginary += imaginary;
     }
 
-    public void add(ComplexNumber complexNumber){
-        complexNumber = new ComplexNumber(getReal(),getImaginary());
+    public ComplexNumber add(ComplexNumber complexNumber){
+
+        return new ComplexNumber(this.real + real, this.imaginary + imaginary);
+
     }
 
     public void subtract(double real, double imaginary) {
         this.real -= real;
         this.imaginary -= imaginary;
+    }
+
+    public ComplexNumber subtract(ComplexNumber complexNumber) {
+        return new ComplexNumber(this.real - real, this.imaginary + imaginary);
     }
 }
