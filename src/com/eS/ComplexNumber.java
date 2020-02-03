@@ -23,10 +23,8 @@ public class ComplexNumber {
         this.imaginary += imaginary;
     }
 
-    public ComplexNumber add(ComplexNumber complexNumber){
-
-        return new ComplexNumber(this.real + real, this.imaginary + imaginary);
-
+    public void add(ComplexNumber complexNumber){
+        add(complexNumber.real, complexNumber.imaginary);
     }
 
     public void subtract(double real, double imaginary) {
@@ -34,7 +32,7 @@ public class ComplexNumber {
         this.imaginary -= imaginary;
     }
 
-    public ComplexNumber subtract(ComplexNumber complexNumber) {
-        return new ComplexNumber(this.real - real, this.imaginary + imaginary);
+    public void subtract(ComplexNumber complexNumber) {
+        subtract(complexNumber.real, complexNumber.imaginary);
     }
 }
